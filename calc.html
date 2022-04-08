@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULATOR</h1>
+        <p>*) This calculator shows the value of sin,cos and tan in radians. 
+            <br>*) Input the values of sin, cos, tan and square root in parentheis e.g. cos(90), tan(30)</p>
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr> <td><button class="btn" value="(" onclick="getvalue('(')">(</button></td>
+                    <td><button class="btn" value=")" onclick="getvalue(')')">)</button></td>
+                    <td><button class="btn" value="C" onclick="getvalue('C')">C</button></td>
+                    <td><button class="btn func" value="sqrt" onclick="getvalue('sqrt')" id="sqrt">&radic;</button></td>
+                    <td><button class="btn func" value="%" onclick="getvalue('%')">%</button></td>
+                   
+                </tr>
+                <tr>
+                    <td><button class="btn" value="7" onclick="getvalue('7')">7</button></td>
+                    <td><button class="btn" value="8" onclick="getvalue('8')">8</button></td>
+                    <td><button class="btn" value="9" onclick="getvalue('9')">9</button></td>
+                    <td><button class="btn func" value="sin" onclick="getvalue('sin')" id="sin">sin</button></td>
+                    <td><button class="btn func" value="*" onclick="getvalue('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="4" onclick="getvalue('4')">4</button></td>
+                    <td><button class="btn" value="5" onclick="getvalue('5')">5</button></td>
+                    <td><button class="btn" value="6" onclick="getvalue('6')">6</button></td>
+                    <td><button class="btn func" value="cos" onclick="getvalue('cos')" id="cos">cos</button></td>
+                    <td><button class="btn func" value="-" onclick="getvalue('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="1" onclick="getvalue('1')">1</button></td>
+                    <td><button class="btn" value="2" onclick="getvalue('2')">2</button></td>
+                    <td><button class="btn" value="3" onclick="getvalue('3')">3</button></td>
+                    <td><button class="btn func" value="tan" id="tan" onclick="getvalue('tan')">tan</button></td>
+                    <td><button class="btn func" value="+" onclick="getvalue('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="0" onclick="getvalue('0')">0</button></td>
+                    <td><button class="btn" value="." onclick="getvalue('.')">.</button></td>
+                    <td></td>
+                    <td><button class="btn func" value="/" onclick="getvalue('/')">/</button></td>
+                    <td><button class="btn equals" value="=" onclick="getvalue('=')">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
